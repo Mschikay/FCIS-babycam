@@ -1,6 +1,6 @@
 # FCIS-babycam
 This repository modified by Ziqi Tang is mainly based on [FCIS](https://github.com/msracver/FCIS).
-###环境配置
+### 环境配置
 ##### 1. python***2.7***
 
 	pip install Cython
