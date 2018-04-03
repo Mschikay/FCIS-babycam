@@ -19,6 +19,13 @@ For Windows: run
 	cmd .\init.bat
 ##### 3. 安装[MXNet@(commit 998378a)](https://github.com/apache/incubator-mxnet/tree/998378a)
 
+无cuda用户需安装cuda8.0才能使用GPU运行程序
+
+安装基本依赖
+
+	sudo apt-get update
+	sudo apt-get install -y build-essential git libblas-dev libopencv-dev
+
 Clone MXNet and checkout to MXNet@(commit 998378a) by
 	
 	git clone --recursive https://github.com/dmlc/mxnet.git
@@ -39,7 +46,7 @@ Install the MXNet Python binding by
 	cd ${MXNET_ROOT}python
 	sudo python setup.py install
 	
-*For advanced users, you may put your Python packge into ./external/mxnet/$(YOUR_MXNET_PACKAGE), and modify MXNET_VERSION in ./experiments/fcis/cfgs/\*.yaml to $(YOUR_MXNET_PACKAGE). Thus you can switch among different versions of MXNet quickly.*
+*For advanced users, you may put your Python packge into ./external/mxnet/$(YOUR_MXNET_PACKAGE), and modify MXNET_VERSION in ./experiments/fcis/cfgs/*.yaml to $(YOUR_MXNET_PACKAGE). Thus you can switch among different versions of MXNet quickly.*
 
 ### 运行程序
 ##### 1. 下载模型
