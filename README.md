@@ -39,7 +39,7 @@ Install the MXNet Python binding by
 	cd ${MXNET_ROOT}python
 	sudo python setup.py install
 	
-*For advanced users, you may put your Python packge into ./external/mxnet/$(YOUR_MXNET_PACKAGE), and modify MXNET_VERSION in ./experiments/fcis/cfgs/*.yaml to $(YOUR_MXNET_PACKAGE). Thus you can switch among different versions of MXNet quickly.*
+*For advanced users, you may put your Python packge into ./external/mxnet/$(YOUR_MXNET_PACKAGE), and modify MXNET_VERSION in ./experiments/fcis/cfgs/\*.yaml to $(YOUR_MXNET_PACKAGE). Thus you can switch among different versions of MXNet quickly.*
 
 ### 运行程序
 ##### 1. 下载模型
